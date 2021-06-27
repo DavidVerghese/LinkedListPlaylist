@@ -1,50 +1,28 @@
+import { Link, useParams } from "react-router-dom";
 import './App.css';
-import { useState } from 'react';
-import Song from "./Song.js";
-import { Switch, Route, Link, useParams } from "react-router-dom";
 
-function Home(props) {
- 
-  const params = useParams();
-  console.log(parseInt(params.number));
-
-  const [currentSong, setCurrentSong] = useState(parseInt(params.number));
-
+function Home() {
   return <div className="home">
-    <h1>The Greatest 60s Rock Songs</h1>
+    
    
-    <div className="song-section">
-      
-      {props.array.map((index, key) => {
-        if (key === currentSong) {
-            return (
-              <div key={key} className="song-card">
-              <p>Rank: #{key+1} greatest rock song of the 60s</p>
-              
-              <h2><b><Link to ={`song/${index.title}`}>"{index.title}"</Link></b> by {index.artist}</h2>
-              <iframe width="560" height="315" src={index.embedlink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div className={currentSong === 0 ? "prev-next-first-screen" : "prev-next"}>
-                  {currentSong !== 0 ? <img onClick={function (e) { e.preventDefault();setCurrentSong(currentSong-1)}}className="previous-button" alt="previous" src="https://img.icons8.com/ios/452/circled-right-2.png"/> : null}
-                   <img onClick={function (e) { e.preventDefault(); setCurrentSong(currentSong + 1) }} className="forward-button" alt="forward" src="https://img.icons8.com/ios/452/circled-right-2.png" /> 
-                 
-              </div>
-          </div>)
-          }
-        else {
-          return <div></div>
-          }
-
-      })}
-      {currentSong === props.size ? <div id="final">
-        <h2>Agree? Disagree?</h2>
-        <img alt="The Doors singing The End" src="https://media4.giphy.com/media/to5hMDO0bKXV6/giphy.gif?cid=790b7611c95d45146d15715a190e3311a7c8c7902983793c&rid=giphy.gif&ct=g"/>
-        
-        <button>Add a song</button>
-        <button>Delete a song</button>
-        <img onClick={function (e) { e.preventDefault();setCurrentSong(currentSong-1)}} id="final-button" alt="previous" src="https://img.icons8.com/ios/452/circled-right-2.png"/>
-      </div> : null}
-      
+  
+    <div className="home-pics">
+      <img alt="George Harrison playing sitar" src="https://media4.giphy.com/media/mrZeRenrWh85O/200.webp?cid=ecf05e47okr8ddfy0qt8i6d1xto50vw8laqdgd2uxl8obkqn&rid=200.webp&ct=g"/>
+      <img alt="Jimi Hendrix playing acoustic" src="https://media4.giphy.com/media/JNMFUwShabBUQ/giphy.gif?cid=ecf05e472mw7jfeic26xtpry3dep28wu8hpqt2rlzdg122wg&rid=giphy.gif&ct=g"/>
+      <img alt="Jim Morrison" src="https://media4.giphy.com/media/qoeZwTtM8wpm8/200.webp?cid=ecf05e47bn0yt3qe39gocc0wwh9t2vu5pctbrr2mcspqiopx&rid=200.webp&ct=g" />
+      <img alt="Beach Boys album cover" src="https://media3.giphy.com/media/348eeKJjYd9EGCDWre/200w.webp?cid=ecf05e471vbkvxe3lwnowbap1yre6tjp0i81rm4rfl84wed6&rid=200w.webp&ct=g"/>
+      </div>
+      <div className="home-title">
+      <h1>Welcome</h1>
+      <p>Here are the top 3 greatest rock songs of the 1960s, according to me.
+      </p>
+        <Link to="/playlist/0"> <button>Start playlist</button></Link>
+      <img src="https://i0.wp.com/www.guitarhangar.com/wp-content/uploads/2018/12/999590_618123934899227_1319880217_n.jpg?fit=630%2C529&ssl=1"/>
     </div>
+       
+
+  
+  
   </div>
 }
 export default Home;

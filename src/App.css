@@ -1,18 +1,99 @@
-button {
-  background-color: #E9B000;
+body {
+  /* background: url("https://wallpaperaccess.com/full/699266.jpg"); */
 }
-.nav {
+button {
+  background-color: white;
+  
+}
+.nav, footer {
   display: flex;
   justify-content: space-around;
   background-color: #008f95;
 }
-.song-card {
-  background-color: #E24E42;
+footer {
+  margin-top: auto;
+  height: 50px;
+}
+.search {
+  margin-top: 20px;
+  display: flex;
+  /* align-items: flex-start; */
+}
+.search p {
+  margin: 10px;
+}
+.search input {
+  width: 200px;
+  height: 20px;
+}
+.search button {
+  margin-left: 20px;
+  background-color: #E9B000;
+}
+.home {
+  display: flex;
+  height: 90vh;
+  /* background-color: #E24E42; */
+  /* flex-direction: column;
+  align-items: center; */
+}
+.home-pics {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  justify-content: center;
+}
+.home-title {
+  width: 40%;
+  background-color: #600e07;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  margin: 10px;
+}
+.home-title button {
+  background-color: white;
+}
+.home img {
+  width: 300px;
+  margin: 20px;
+}
+.home button {
+  padding: 20px;
+  margin: 10px;
+}
+.search-result-entry {
+  /* background-color: #E24E42; */
   margin: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.playlistinfo {
+  background-color: #600e07;
+  color: white;
+  padding: 20px;
+}
+.playlistinfo a {
+  color: white;
+  text-decoration: none;
+}
+.song-card {
+  /* background-color: #E24E42; */
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+}
+.song-card img {
+  object-fit: cover;
+}
+.search-result-entry {
+  width: 600px;
 }
 #final {
   background-color: #E24E42;
@@ -39,20 +120,31 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.home {
+.playlist {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  height: 90vh;
+}
+.searchresult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
 }
 .song-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.home img {
-  width: 300px;
+.song-grid img {
+  width: 250px;
+  height: 250px; 
+ object-fit: cover; 
+ margin: 10px;
 }
 
 .prev-next {
