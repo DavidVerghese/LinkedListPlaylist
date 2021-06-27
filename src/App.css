@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+button {
+  background-color: #E9B000;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #008f95;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.song-card {
+  background-color: #E24E42;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#final {
+  background-color: #E24E42;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+}
+#final-button {
+  width: 50px;
+  transform: scaleX(-1);
+}
+.individual-song {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.song-info {
+  background-color: #Eb6e80;
+  margin: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.song-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home img {
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.prev-next {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.prev-next img, .prev-next-first-screen img {
+  width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev-next-first-screen {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.previous-button {
+  transform: scaleX(-1);
 }
