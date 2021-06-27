@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './App.css';
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
       <p>Here are the top 3 greatest rock songs of the 1960s, according to me.
       </p>
         <Link to="/playlist/0"> <button>Start playlist</button></Link>
-      <img src="https://i0.wp.com/www.guitarhangar.com/wp-content/uploads/2018/12/999590_618123934899227_1319880217_n.jpg?fit=630%2C529&ssl=1"/>
+      <img alt="Eric Claption's guitar" src="https://i0.wp.com/www.guitarhangar.com/wp-content/uploads/2018/12/999590_618123934899227_1319880217_n.jpg?fit=630%2C529&ssl=1"/>
     </div>
        
 
