@@ -1,16 +1,15 @@
-import {Link, useParams } from "react-router-dom";
+import {Link } from "react-router-dom";
 import './App.css';
 
 function SearchResults(props) {
 
-  const params = useParams();
 
   return <div className="searchresult">
     <h1>Search Results: </h1>
-    {props.array.length === 0 ? <div><p>No Results Found</p><img src="https://i.pinimg.com/originals/ab/ae/1a/abae1a8aa6b8f5513b629931dc185747.gif"/></div> :  
-     props.array.map((index) => {
+    {props.array.length === 0 ? <div><p>No Results Found</p><img alt="Beatles walking away" src="https://i.pinimg.com/originals/ab/ae/1a/abae1a8aa6b8f5513b629931dc185747.gif"/></div> :  
+     props.array.map((index, key) => {
       
-      return (<div className="search-result-entry">
+       return (<div key={key} className="search-result-entry">
 
         <h2><b><Link to={`/${index.title}`}>"{index.title}"</Link></b> by {index.artist}</h2>
         <p>Rank: #{props.playlist.indexOf(index.title) + 1} greatest song of the 60s</p>
