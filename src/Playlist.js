@@ -17,13 +17,13 @@ function Playlist(props) {
             return (
               <div key={key} className="song-card">
 
-                <div className="song-grid">
+                {/* <div className="song-grid">
                   <img alt={index.alt[0]} src={index.image} />
                   <img alt={index.alt[1]} src={index.extrapics[0]} />
                   <img alt={index.alt[2]}  src={index.extrapics[1]} />
                   <img alt={index.alt[3]} src={index.extrapics[2]} />
                   
-                </div>
+                </div> */}
                 <div className="playlistinfo">
               <p>Rank: #{key+1} greatest rock song of the 60s</p>
               

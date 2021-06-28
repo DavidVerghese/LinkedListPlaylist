@@ -154,9 +154,9 @@ function App() {
         </Route>
               
       </div>
-      <footer>
+      {/* <footer>
         David Verghese
-      </footer>
+      </footer> */}
     </div>
   );
 }
