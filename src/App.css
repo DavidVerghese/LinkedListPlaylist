@@ -1,14 +1,20 @@
 body {
   /* background: url("https://wallpaperaccess.com/full/699266.jpg"); */
+  background-image: url("./background2.jpeg");
+  background-size: cover;
 }
 button {
   background-color: white;
   
 }
+
 .nav, footer {
   display: flex;
   justify-content: space-around;
-  background-color: #008f95;
+  color: black;
+}
+.nav a {
+  color: black;
 }
 footer {
   margin-top: auto;
@@ -17,7 +23,6 @@ footer {
 .search {
   margin-top: 20px;
   display: flex;
-  /* align-items: flex-start; */
 }
 .search p {
   margin: 10px;
@@ -30,13 +35,13 @@ footer {
   margin-left: 20px;
   background-color: #E9B000;
 }
+
 .home {
-  display: flex;
   height: 90vh;
-  /* background-color: #E24E42; */
-  /* flex-direction: column;
-  align-items: center; */
+  font-size: 30px;
 }
+
+
 .home-pics {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +50,6 @@ footer {
 }
 .home-title {
   width: 40%;
-  background-color: #600e07;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +69,6 @@ footer {
   margin: 10px;
 }
 .search-result-entry {
-  /* background-color: #E24E42; */
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -73,12 +76,9 @@ footer {
   align-items: center;
 }
 .playlistinfo {
-  background-color: #600e07;
-  color: white;
   padding: 20px;
 }
 .playlistinfo a {
-  color: white;
   text-decoration: none;
 }
 .song-card {
@@ -108,9 +108,14 @@ footer {
   width: 50px;
   transform: scaleX(-1);
 }
+.song {
+  display: flex;
+  width: 100%;
+}
 .individual-song {
   display: flex;
   justify-content: center;
+  width: 60%;
 }
 .song-info {
   background-color: #Eb6e80;
@@ -119,6 +124,16 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+.fun-facts {
+  background-color: #Eb6e80;
+  margin: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
 }
 .playlist {
   display: flex;
