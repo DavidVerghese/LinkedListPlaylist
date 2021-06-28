@@ -1,0 +1,22 @@
+.home {
+  font-size: 30px;
+  margin: 0px;
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home button {
+  padding: 20px;
+  margin: 10px;
+  width: 20%;
+}
+.home h1 {
+  color: #A239CA;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+#begin {
+  margin-top: 30px;
+}

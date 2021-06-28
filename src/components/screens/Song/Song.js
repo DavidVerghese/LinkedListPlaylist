@@ -1,4 +1,4 @@
-import './App.css';
+import '../../../App.css';
 import {Link, useParams } from "react-router-dom";
 
 function Song(props) {

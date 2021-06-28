@@ -1,9 +1,9 @@
 import './App.css';
 import { Route, Link } from "react-router-dom";
 import Playlist from "./Playlist.js";
-import Song from "./Song.js";
+import Song from "./components/screens/Song/Song.js";
 import SearchResults from "./SearchResults.js";
-import Home from "./Home.js";
+import Home from "./components/screens/Home/Home.js";
 
 import { useState } from "react";
 
@@ -125,7 +125,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="app">
       <header className="nav">
 
         <h2><Link to="/">Home</Link></h2>
@@ -139,7 +139,7 @@ function App() {
         </div>
         
       </header>
-      <div>
+    
       <Route exact path="/">
         <Home/>
         </Route>
@@ -151,12 +151,15 @@ function App() {
         </Route>
         <Route exact path = "/searchresults">
           <SearchResults array={searchResults} playlist={playlist}/>
-        </Route>
+      </Route>
+      
+      <footer>
+        <p>David Verghese Media and Software Solutions</p>
+        <p>Github</p>
+        <p>LinkedIn</p>
+      </footer>
               
-      </div>
-      {/* <footer>
-        David Verghese
-      </footer> */}
+
     </div>
   );
 }
